@@ -1,3 +1,3 @@
 # online-shop
 
-Live: 
+Live: https://wickgit.github.io/online-shop/
