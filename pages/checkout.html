@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+
+  <section id="header">
+    <a id="logo" href="#">Logo</a>
+    <div>
+      <ul id="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="categories.html">Shop</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="cart.html"><img id="cart-icon" src="../media/shopping-cart.png" alt="Shopping cart"></a></li>
+      </ul>
+    </div>
+  
+    <div id="mobile">
+      <a href="../pages/cart.html"><img id="cart-icon-mobile" src="../media/shopping-cart.png" alt="Shopping cart"></a>
+      <img src="../media/hamburger.png" alt="menu" id="menu">
+    </div>
+  </section>
+
+  <section id="checkout">
+    <div class="checkout-form">
+      <div class="name">
+        <label for="name-field">Cardholder name</label>
+        <input type="text" id="name-field">
+      </div>
+      <div class="card-number">
+        <label for="card-number-field">Card number</label>
+        <input type="text" id="name-number-field">
+      </div>
+      <div class="other">
+        <div class="exp-date">
+          <label for="exp-date-field">Expiring date</label>
+          <input type="text" id="exp-date-field">
+        </div>
+        <div class="cvc">
+          <label for="cvc-field">CVC</label>
+          <input type="password" id="cvc-field">
+        </div>
+      </div>
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <section id="footer">
+    <p>Copyright &#169; 2022 All Rights Reserved.</p>
+  </section>
+
+</body>
+</html>

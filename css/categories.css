@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav li {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+#nav li a {
+  color: white;
+}
+
+#nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background-color: rgb(18, 16, 16);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#logo {
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+#menu {
+  height: 30px;
+}
+
+#cart-icon {
+  width: 2.8rem;
+}
+
+#cart-icon-mobile {
+  width: 3rem;
+}
+
+#mobile {
+  display: none;
+}
+
+
+
+
+
+#categories {
+  padding: 30px 80px;
+}
+
+#categories .categories-big {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+#categories .category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  height: 50vh;
+  background-image: url(../media/category-bg/category-bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+.categories-small {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+#categories .category-small {
+  height: 35vh;
+}
+
+#categories h4 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: white;
+}
+
+#categories h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+#categories p {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#categories button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 8px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+}
+
+#categories button a {
+  color: white;
+}
+
+#categories button:hover {
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.2s ease;
+}
+
+#categories button:hover a {
+  color: black;
+}
+
+#categories .category-small button {
+  margin-top: 6px;
+}
+
+
+
+
+
+#news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 80px;
+  margin: 40px 0;
+  background-color: rgb(18, 16, 16);
+}
+
+#news .news-text h3 {
+  font-size: 3.2rem;
+  margin: 4px 0;
+  color: white;
+}
+
+#news .news-text p {
+  font-size: 1.6rem;
+  color: white;
+  opacity: 0.5;
+}
+
+#news .news-text p span {
+  color:rgb(45, 134, 45);
+  opacity: 1;
+}
+
+#news .news-form {
+  width: 40%;
+}
+
+#news .news-form form {
+  display: flex;
+}
+
+#news .news-form input {
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+#news .news-form button {
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background-color: rgb(185, 18, 18);
+  color: white;
+  cursor: pointer;
+}
+
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 1.4rem;
+}
+
+
+
+
+@media (max-width: 799px) {
+  #nav {
+    display: none;
+  }
+
+  #nav li a {
+    color: black;
+  }
+
+  #nav li {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #card-icon {
+    display: none;
+  }
+
+  #mobile > img {
+    padding-left: 20px;
+  }
+
+  #categories {
+    padding: 30px 20px 0;
+  }
+
+  #categories .category {
+    height: 40vh;
+  }
+
+  #categories .category-small {
+    height: 25vh;
+  }
+
+  #categories .category-small h2 {
+    font-size: 2.4rem;
+  }
+
+  #categories .category-small h4 {
+    font-size: 1.8rem;
+  }
+
+  #categories .category-small button {
+    padding: 6px 35px;
+  }
+
+  #news {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  #news .news-form {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 479px) {
+  #header {
+    padding: 20px;
+  }
+
+  #news {
+    padding: 16px;
+  }
+
+  #news .news-form {
+    width: 100%
+  }
+}

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav li {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+#nav li a {
+  color: white;
+}
+
+#nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background-color: rgb(18, 16, 16);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#logo {
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+#menu {
+  height: 30px;
+}
+
+#cart-icon {
+  width: 2.8rem;
+}
+
+#cart-icon-mobile {
+  width: 3rem;
+}
+
+#mobile {
+  display: none;
+}
+
+
+
+
+
+
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 32vh;
+  background-image: url(../media/cart/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#banner h2 {
+  font-size: 4.8rem;
+  line-height: 3.6rem;
+}
+
+
+
+
+
+#cart {
+  padding: 60px;
+  overflow-x: auto;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart thead {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#cart thead td {
+  padding: 15px 0;
+  Text-align: start;
+}
+
+
+#cart thead {
+  border-top: 2px solid rgb(213, 213, 213);
+  border-bottom: 2px solid rgb(213, 213, 213);
+}
+
+#cart table img {
+  width: 80px;
+}
+
+#cart table tbody {
+  font-size: 1.8rem;
+}
+
+#cart tbody tr td {
+  padding-top: 14px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 60px;
+  padding: 10px;
+}
+
+#cart table button {
+  background-color: rgb(147, 22, 22);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+#subtotal {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
+#subtotal .subtotal-wrapper {
+  border: 1px solid rgb(188, 188, 188);
+  width: 40%;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+#subtotal .subtotal-wrapper h3 {
+  font-size: 2.8rem;
+  margin-bottom: 6px;
+}
+
+#subtotal .subtotal-wrapper .cart-info {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  font-size: 1.8rem;
+}
+
+#subtotal .subtotal-wrapper .cart-info > div {
+  display: flex;
+}
+
+#subtotal .subtotal-wrapper .cart-info div div {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid rgb(188, 188, 188);
+}
+
+#subtotal .subtotal-wrapper .cart-info #total-price {
+  font-weight: bold;
+}
+
+#subtotal .subtotal-wrapper button {
+  background-color: rgb(49, 120, 49);
+  padding: 15px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#subtotal .subtotal-wrapper button a {
+  color: white;
+}
+
+
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 1.4rem;
+}
+
+
+
+
+
+
+@media (max-width: 799px) {
+  #nav {
+    display: none;
+  }
+
+  #nav li a {
+    color: black;
+  }
+
+  #nav li {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #card-icon {
+    display: none;
+  }
+
+  #mobile > img {
+    padding-left: 20px;
+  }
+
+  #subtotal .subtotal-wrapper {
+    width: 70%;
+  }
+}
+
+
+
+@media (max-width: 479px) {
+  #header {
+    padding: 20px;
+  }
+
+  #subtotal .subtotal-wrapper {
+    width: 90%;
+  }
+
+  #cart {
+    padding: 60px 10px;
+  }
+}

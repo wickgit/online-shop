@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+  
+  <section id="header">
+    <a id="logo" href="#">Logo</a>
+    <div>
+      <ul id="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="categories.html">Shop</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="cart.html"><img id="cart-icon" src="../media/shopping-cart.png" alt="Shopping cart"></a></li>
+      </ul>
+    </div>
+  
+    <div id="mobile">
+      <a href="../pages/cart.html"><img id="cart-icon-mobile" src="../media/shopping-cart.png" alt="Shopping cart"></a>
+      <img src="../media/hamburger.png" alt="menu" id="menu">
+    </div>
+  </section>
+
+  <section id="banner">
+    <h2>Cart</h2>
+  </section>
+
+  <section id="cart">
+    <table>
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button class="remove-button">x</button></td>
+          <td><img src="../media/t-shirt-2.jpg" alt="product"></td>
+          <td>Product Name</td>
+          <td>$100</td>
+          <td><input type="number" min="1" max="100" value="1"></td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td><button class="remove-button">x</button></td>
+          <td><img src="../media/t-shirt-2.jpg" alt="product"></td>
+          <td>Product Name 2</td>
+          <td>$100</td>
+          <td><input type="number" min="1" max="100" value="1"></td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td><button class="remove-button">x</button></td>
+          <td><img src="../media/t-shirt-2.jpg" alt="product"></td>
+          <td>Product Name 3</td>
+          <td>$100</td>
+          <td><input type="number" min="1" max="100" value="1"></td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td><button class="remove-button">x</button></td>
+          <td><img src="../media/t-shirt-2.jpg" alt="product"></td>
+          <td>Product Name 4</td>
+          <td>$100</td>
+          <td><input type="number" min="1" max="100" value="1"></td>
+          <td>$100</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </section>
+
+  <section id="subtotal">
+    <div class="subtotal-wrapper">
+      <h3>Cart Totals</h3>
+      <div class="cart-info">
+        <div>
+          <div>Cart Subtotal</div>
+          <div>$ 440</div>
+        </div>
+        <div>
+          <div>Shipping</div>
+          <div>Free</div>
+        </div>
+        <div id="total-price">
+          <div>Total</div>
+          <div>$ 335</div>
+        </div>
+      </div>
+      <button><a href="../pages/checkout.html">Proceed to checkout</a></button>
+    </div>
+  </section>
+
+  <section id="footer">
+    <p>Copyright &#169; 2022 All Rights Reserved.</p>
+  </section>
+
+</body>
+
+</html>

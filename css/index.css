@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav li {
+  list-style: none;
+  padding: 0 30px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+#nav li a {
+  color: white;
+}
+
+#nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background-color: rgb(18, 16, 16);
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#logo {
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+#menu {
+  height: 30px;
+}
+
+#cart-icon {
+  width: 2.8rem;
+}
+
+#cart-icon-mobile {
+  width: 3rem;
+}
+
+#mobile {
+  display: none;
+}
+
+
+
+
+#main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(../media/main-background.jpg);
+  background-position: center top 20%;
+  background-size: cover;
+  height: 90vh;
+  padding: 0 120px;
+}
+
+#main-wrapper h1 {
+  font-size: 6.6rem;
+  color: rgb(224, 8, 8);
+}
+
+#main-wrapper h2 {
+  font-size: 5.2rem;
+}
+
+#main-wrapper h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  color: rgb(40, 40, 40);
+}
+
+.main button {
+  margin-top: 5px;
+  border: 3px solid rgb(207, 7, 7);
+  border-radius: 7px;
+  padding: 12px 50px;
+  background-color: rgb(224, 8, 8);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main button:hover {
+  transition: 0.4s ease;
+  background-color: white;
+  color: rgb(207, 7, 7);
+}
+
+
+
+
+
+
+.section-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px;
+}
+
+.section-products h2 {
+  font-size: 5.6rem;
+  text-align: center;
+}
+
+.section-products p {
+  font-size: 2rem;
+  color:rgb(40, 40, 40);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.products {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  min-width: 250px;
+  border: 2px solid rgb(63, 63, 63);
+  border-radius: 25px;
+  padding: 10px;
+  transition: 0.3s ease;
+  box-shadow: 6px 16px 35px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 6px 16px 25px rgb(0, 0, 0, 0.2);
+}
+
+.product-card .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  border-radius: 24px;
+}
+
+.product-card .card-description {
+  padding: 10px 0;
+  position: relative;
+}
+
+.product-card .card-brand {
+  font-size: 1.3rem;
+  color:rgb(63, 63, 63);
+  padding-bottom: 4px;
+}
+
+.product-card .card-name {
+  font-size: 1.8rem;
+}
+
+.product-card .card-rating {
+  padding: 4px 0;
+}
+
+.product-card .star {
+  height: 1.5rem;
+}
+
+.product-card .card-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color:rgb(20, 103, 20);
+}
+
+.product-card .card-description > img {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  height: 4.4rem;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgb(20, 103, 20, 0.5);
+  box-shadow: 4px 6px 10px rgb(0, 0, 0, 0.15);
+}
+
+
+
+#banner {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../media/banner-background.jpg);
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  box-shadow: 0 -7px 25px rgba(0, 0, 0, 0.2);
+}
+
+#banner h3 {
+  font-size: 2.1rem;
+  color: white;
+}
+
+#banner h2 {
+  font-size: 3.6rem;
+  margin-bottom: 16px;
+  color: white;
+}
+
+#banner h2 span {
+  color:rgb(207, 7, 7);
+}
+
+#banner button {
+  padding: 10px 40px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#banner button:hover {
+  background-color: black;
+  transition: 0.3s ease;
+  color: white;
+}
+
+
+
+#news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 80px;
+  margin: 40px 0;
+  background-color: rgb(18, 16, 16);
+}
+
+#news .news-text h3 {
+  font-size: 3.2rem;
+  margin: 4px 0;
+  color: white;
+}
+
+#news .news-text p {
+  font-size: 1.6rem;
+  color: white;
+  opacity: 0.5;
+}
+
+#news .news-text p span {
+  color:rgb(45, 134, 45);
+  opacity: 1;
+}
+
+#news .news-form {
+  width: 40%;
+}
+
+#news .news-form form {
+  display: flex;
+}
+
+#news .news-form input {
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+#news .news-form button {
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background-color: rgb(185, 18, 18);
+  color: white;
+  cursor: pointer;
+}
+
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 1.4rem;
+}
+
+
+
+
+/* responsive for tablets */
+@media (max-width: 799px) {
+  #nav {
+    display: none;
+  }
+
+  #nav li a {
+    color: black;
+  }
+
+  #nav li {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #card-icon {
+    display: none;
+  }
+
+  #mobile > img {
+    padding-left: 20px;
+  }
+
+  #main-wrapper {
+    background-position: 50%;
+  }
+
+  .products {
+    padding: 0;
+  }
+
+  #banner {
+    height: 25vh;
+  }
+
+  #news {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  #news .news-form {
+    width: 70%;
+  }
+}
+
+
+
+@media (max-width: 479px) {
+  #header {
+    padding: 20px;
+  }
+
+  #main-wrapper {
+    padding: 20px;
+    background-position: 50%;
+  }
+
+  #main-wrapper .main h2 {
+    font-size: 3.4rem;
+  }
+
+  #main-wrapper .main h1 {
+    font-size: 4.4rem;
+  }
+
+  #main-wrapper .main h3 {
+    margin: 6px 0;
+    font-size: 1.5rem;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #news {
+    padding: 16px;
+  }
+
+  #news .news-form {
+    width: 100%
+  }
+}
