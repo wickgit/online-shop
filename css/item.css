@@ -363,4 +363,29 @@ a {
   #product-info .info {
     width: 100%;
   }
+
+  #news {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  #news .news-form {
+    width: 70%;
+  }
+}
+
+
+
+@media (max-width: 479px) {
+  #header {
+    padding: 20px;
+  }
+
+  #news {
+    padding: 16px;
+  }
+
+  #news .news-form {
+    width: 100%
+  }
 }

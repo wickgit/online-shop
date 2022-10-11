@@ -118,10 +118,17 @@ a {
   cursor: pointer;
 }
 
+.main button a {
+  color: white;
+}
+
+.main button:hover a {
+  color: rgb(207, 7, 7);
+}
+
 .main button:hover {
   transition: 0.4s ease;
   background-color: white;
-  color: rgb(207, 7, 7);
 }
 
 
